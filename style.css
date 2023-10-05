@@ -73,6 +73,10 @@ body{
     transition: 0.8s;
 }
 
+.hide {
+    display: none;
+}
+
 .result:hover {
     transform: scale(1.1);
 }
@@ -110,4 +114,33 @@ body{
 
 .info:hover .tooltip {
     display: inline;
+}
+
+.about {
+    max-width: 620px;
+    background-color: #242424;
+    padding: 24px 14px;
+    border: 1px solid #696969;
+    border-radius: 4px;
+}
+
+.about p {
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 150%;
+}
+
+.button-calcular {
+    background-color: #119cea;
+    height: 48px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 24px;
+    border-radius: 4px;
 }

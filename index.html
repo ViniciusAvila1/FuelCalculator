@@ -13,27 +13,29 @@
             Qual a melhor opção?
         </h1>
 
-        <form class="form">
+        <form onsubmit="calcular(event)" class="form">
             <label>Álcool (preço por litro):</label>
-            <input class="input" type="number" placeholder="4.59" min="1" step="0.01" required>
+            <input id="alcool" class="input" type="number" placeholder="4.59" min="1" step="0.01" required>
 
             <label>Gasolina (preço por litro):</label>
-            <input class="input" type="number" placeholder="5.89" min="1" step="0.01" required>
+            <input id="gasolina" class="input" type="number" placeholder="5.89" min="1" step="0.01" required>
 
             <input class="button" type="submit" value="Calcular" />
         </form>
 
-        <section class="result">
+        <section id="content-result" class="result hide">
             <span id="text-result">Compensa usar Álcool</span>
 
-            <span>Álcool 3.90</span>
-            <span>Gasolina 5.40</span>
+            <span id="alcool-result">Álcool 3.90</span>
+            <span id="gasolina-result">Gasolina 5.40</span>
         </section>
     </main>
 
     <div class="info">
         <span class="tooltip">Veja como é feito o cálculo</span>
-        <a href="#"><img class="info-img" src="./assets/info.png" alt="Veja como é feito o cálculo"></a>
+        <a href="about.html"><img class="info-img" src="./assets/info.png" alt="Veja como é feito o cálculo"></a>
     </div>
+
+    <script src="/script.js"></script>
 </body>
 </html>
