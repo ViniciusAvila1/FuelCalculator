@@ -1,21 +1,52 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=1dc7b7&height=120&section=header"/>
+# Calculadora de Combustível
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+Fuel+Calculator+%E2%9B%BD" alt="Typing SVG" /></a>
+**Projeto:** Uma ferramenta simples para ajudar motoristas a decidir se é mais vantajoso abastecer com álcool ou gasolina com base no preço atual dos combustíveis.
 
-<br/>
+## Funcionalidades
 
-<div>
-    <strong>⛽Fuel Calculator</strong>
-</div>
+- **Entrada de preços:** Permite inserir os valores por litro de álcool e gasolina.
+- **Cálculo automático:** Utiliza a relação 0.7 como referência para indicar o combustível mais vantajoso.
+- **Página informativa:** Explica como o cálculo é realizado com exemplos práticos.
 
-<div>
-    Aplicação desenvolvida em HTML, CSS e JavaScript com intuito de trabalhar formulários em HTML, estilização utilizando CSS e manipulação de informações com JavaScript.
-</div>
+## Tecnologias Utilizadas
 
-<div>
-    O sistema é uma calculadora que recebe o valor do álcool por litro e também o valor da gasolina por litro, fazendo um cálculo que retorna para o usuário qual combustível está compensando usar, baseado nos valores informados.
-</div>
+- **HTML5:** Estrutura do site.
+- **CSS3:** Estilização da interface.
+- **JavaScript:** Lógica de cálculo e interatividade.
 
-<div>
-    Caso o usuário deseje saber como é feito o cálculo, o sistema possui um botão que o direciona para a tela com a explicação. 
-</div>
+## Como Usar
+
+1. Acesse a calculadora pelo link:  
+   **[Calculadora de Combustível no GitHub Pages](https://viniciusavila1.github.io/FuelCalculator/)**
+2. Insira os preços dos combustíveis e clique em "Calcular".
+3. O resultado será exibido indicando qual opção é mais vantajosa.
+
+## Detalhes do Cálculo
+
+A fórmula usada é a seguinte:
+
+- Dividimos o valor do litro do álcool pelo da gasolina.
+- Se o resultado for menor que 0.7, **compensa usar álcool**.
+- Caso contrário, **compensa usar gasolina**.
+
+Exemplo:
+
+- Álcool: R$ 3,29
+- Gasolina: R$ 4,92
+- Resultado: \( 3,29 \div 4,92 = 0,67 \)
+- Como \( 0,67 < 0,7 \), a recomendação é **álcool**.
+
+Mais detalhes podem ser encontrados na página **"Entenda como o cálculo é feito"**.
+
+## Estrutura do Projeto
+
+- `index.html`: Página principal da calculadora.
+- `about.html`: Página explicativa do cálculo.
+- `script.js`: Lógica do cálculo em JavaScript.
+- `style.css`: Estilização do projeto.
+- `/assets`: Imagens do logo e ícone de informação.
+
+## Melhorias Futuras
+
+- Adicionar responsividade ao design.
+- Suporte para diferentes moedas e formatos de entrada.
